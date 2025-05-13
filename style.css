@@ -1,0 +1,195 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+div .container{
+  text-align: center;
+}
+.container{
+  display: flex;
+  flex-wrap:wrap;
+}
+#footer{
+  text-align: center
+}
+
+nav a:hover{
+  background-color: rgba(128, 128, 128, 0.5);
+  color: rgb(	175,238,238);
+  border-bottom: 2px solid rgb(	175,238,238);
+}
+
+body{
+  background-image: url(f3e7db.png);
+}
+
+img:hover{
+  filter: drop-shadow(0px 5px 5px black);
+  margin-top: -10px;
+  margin-bottom: 10px;
+  transition: 1s;
+}
+
+nav a{
+  flex: 1;
+  background-color: black;
+  
+  color: rgba(255,255,255,0.8);
+  letter-spacing: 2px;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  }
+/* Home Page */
+#main .center{
+  display: flex;
+  flex: 1;
+
+}
+
+*{
+  transition: 0.5s;
+}
+
+#main {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px 0px 70px 60px rgb(0 0 0 / 30%);
+    padding: 105px 0px;
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#align{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  text-align: center;
+   margin: 5px;
+   padding: 50px;
+   flex: 3;
+}
+
+.center_home{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+   text-shadow: 5px 5px 5px black;
+  background-image: linear-gradient(45deg,rgba(128, 204, 255, 0.4),rgba(128, 204, 255, 0.4)), url("images/3dayssinnyc.jpg")
+}
+
+nav img:hover{
+  rotate: 360deg;
+  transition: 2s;
+  box-shadow: none;
+}
+
+#link{
+  color: black;
+  margin: 20px;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  border: 2px solid; 
+  border-radius: 40px;
+  background-color: white;
+  font-style: oblique;
+}
+
+#link:hover{
+  background-color: lightblue;
+  box-shadow: 2px 2px rgba(0,0,0,0.4);
+}
+
+a {
+  text-decoration: none;
+}
+
+/*info page*/
+.center_info{
+    justify-content: center;
+    align-items: center;
+    background-position: top center;
+    background-image: url("images/information.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 50px 50px rgb(0 0 0 / 50%) inset;
+    padding: 105px, 0px;
+    font-size: 50pt;
+    text-shadow: 5px 5px 5px midnightblue;
+    color: white
+}
+
+/*anal page*/
+.center_anal{
+    justify-content: center;
+    align-items: center;
+    background-position: top center;
+    background-image: url("images/operator.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 50px 50px rgb(0 0 0 / 50%) inset;
+    padding: 105px, 0px;
+    font-size: 50pt;
+    text-shadow: 5px 5px 5px grey;
+    color: white
+}
+
+
+.card{
+  flex:1;
+  margin:10px;
+  padding:10px;
+  border:1px solid gray;
+  text-align:center;
+  box-shadow:2px 2px 2px black;
+  border-radius:2px;
+}
+
+.fitted{
+  max-width:200px;
+  min-width:200px;
+  background-color:cornflowerblue;
+}
+
+
+.button{
+  text-decoration:none;
+  background-color:black;
+  color:white;
+  border-radius:4px;
+  padding:6px;
+  box-shadow:2px 2px 2px black;
+}
+
+.button:hover{
+  background-color:cornflowerblue;
+}
+
+#rightPanel{
+  flex:2;
+}
+
+#leftPanel{
+  flex:1;
+}
+
+.highlight{
+  font-style:italic;
+  color:blue;
+}
+
+.map{
+  margin-top:10px;
+  max-width:90%;
+  border-radius:10px;
+  box-shadow:2px 2px 2px black;
+}
+
+body{
+  display: block;
+  margin: 0px;
+}

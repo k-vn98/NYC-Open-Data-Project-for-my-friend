@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="components.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+  <script src="helper.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="fillDropDown.js"></script>
+</head>
+
+<body onload="init_info()">
+   <div>
+    <nav class="container" style="background-color: rgb(0,0,0);">
+      <p><a href="index.html">
+        <img src="images/nypd.png" width="52" height="60">
+        </a></p>
+      <a href="index.html"> <h4>Home Page</h4></a>
+      <a href="info.html"> <h4>Info Page</h4></a>
+      <a href="anal.html"> <h4>Analysis page</h4></a>
+    </nav>
+  </div>
+
+  <div class="center_info" id="main">
+  <h1>NYC HATE CRIMES</h1>
+  <h3>INFORMATION PAGE</h3>
+  </div>
+  
+  <br>
+  
+  <div class="container">
+    <div id="leftPanel">
+      <div class="card">
+        <h3>Search County to find your borough </h3>
+        <select id="county"></select>
+        <a class="button" onclick="filterByCounty()"> Search </a>
+      </div>
+      
+      <div class="card">
+        <h3>Search The Arrest ID and Motive to find your ID and Motive </h3>
+        <input type="text" id="arrest" placeholder="Enter Arrest ID">
+        <select id="motive"></select>
+        <a class="button" onclick="filterByMotiveANDArrestID()"> Search </a>
+      </div>
+
+      <div class="card">
+        <h3>Search The Offense Category to find the Category</h3>
+        <select id="category"></select>
+        <a class="button" onclick="filterByCategory()"> Search </a>
+      </div> 
+
+    </div>
+    
+    <div class="card" id="rightPanel">
+      <h1> Information Output </h1>
+      <div id="output" class="container"></div>
+    </div>
+  </div>
+</body>
+  
+    <div class="container" style="justify-content: center; background-color: black; padding: 20px;">
+      <h2 style="color: rgba(175,238,238);" > INFORMATION </h2>
+  </div>
+  <div  style="background-color: black; color: white;" class="container" id="footer">
+    <h4 style="flex: 1;">  About Us <br> <br> Three boys from a Computer Science Class at Bayside Highschool programmed this website to help you find better understanding of Hate Crimes that occur around New York City. </h4>
+    <div> 
+    <h4 style="flex: 1;">Contact Information: 111-222-3333<br> baysidehighschool@gmail.com <br> <br> </h4>
+       <a href="https://twitter.com/"> <img src="images/twitter-logo.png" height="42" width="42"> </a>
+      <a href="https://instagram.com/">  <img src="images/insta.png" height="42" width="42"> </a>
+      <a href="https://facebook.com/"> <img src="images/Facebook-logo.png" height="42" width="42"> </a>
+    </div>
+    <h4 style="flex: 1; color: white"">Why NYC HATE CRIMES? <br> <br> NYC Hate Crimes provides information about the most recent hate crimes that have happened in the area, so people become more aware of the situations that had happened.  <br></h4>
+  <div style="flex: 1; color: white">  
+    <a style="color: white" href="private_policy.html"><h4> Private Policy </h4></a>
+    <a style="color: white" href="terms_conditions.html"><h4>Terms & Conditions </h4></a>
+  </div>
+    <h4> Keven Liu, Edison Mei, Yi Fan Tian <br> Bayside ©Copyright 2023 </h4>
+  </div>
+</html>
