@@ -53,10 +53,11 @@ function card( crime ){
 }
 
 function showLocation(lat, lon){
-  mapKey = "4Kw8FOzg8LjvUNkYaZcYB264jj16txok";
+  //mapKey = "gone";
   
-  let map = `https://www.mapquestapi.com/staticmap/v5/map?center=${lat},${lon}&zoom=14&size=@2x&key=${mapKey}`;
-  return`<img class="map" src="${map}">`;
+  //let map = `https://www.mapquestapi.com/staticmap/v5/map?center=${lat},${lon}&zoom=14&size=@2x&key=${mapKey}`;
+  //return`<img class="map" src="${map}">`;
+  return ;
 }
 
 function cards(crimes){
